@@ -61,6 +61,7 @@ header .title {
     color: rgb(59, 57, 57);
 }
 
+
 .info {
     padding: 10px 10px 20px 10px;
 }
@@ -90,7 +91,7 @@ header .title {
 .disc-text {
     position: absolute;
     top:0;
-    padding: 30px 30px 0 30px;
+    padding: 0 30px;
     text-align: center;
     height: 100%;
     animation: disc 1s both;
