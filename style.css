@@ -1,0 +1,172 @@
+header {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .title {
+    font-size: 24px;
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary);
+}
+
+.bg-accent {
+    background-color: var(--color-accent);
+}
+
+.bg-white {
+    background-color: #ffffff
+}
+
+.color-primary {
+    color: var(--color-primary);
+}
+
+.color-secondary {
+    color: var(--color-secondary);
+}
+
+.color-accent {
+    color: var(--color-accent);
+}
+
+.color-white {
+    color: #ffffff
+}
+
+.color-black {
+    color: rgb(59, 57, 57);
+}
+
+.info {
+    padding: 10px 10px 20px 10px;
+}
+
+.info .title {
+    font-size: 20px;
+}
+
+.info .content {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.location {
+    margin-top: 10px;
+}
+
+.book {
+    text-align: center;
+    padding: 30px 0 10px 0;
+}
+
+.disc {
+    position:relative;
+    height: fit-content;
+}
+.disc-text {
+    position: absolute;
+    top:0;
+    padding: 30px 30px 0 30px;
+    text-align: center;
+    height: 100%;
+    animation: disc 1s both;
+}
+
+@keyframes disc {
+    from{
+        opacity: 0;
+        top: 10px;
+
+    }
+    to {
+        opacity: 1;
+        backdrop-filter: blur(2px) brightness(80%);
+    }
+}
+
+.chef {
+    padding: 10px 10px 20px 10px;
+}
+
+.chef .container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.chef .title {
+    font-size: 20px;
+    padding-bottom: 6px;
+}
+
+.chef .text {
+    font-size: 10px;
+    width: 60%;
+}
+
+.chef img{
+    width: 30%;
+    height: fit-content;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+.menu-list {
+    flex-direction: column;
+    padding: 10px 10px 20px 10px;
+}
+
+.menu-list .title {
+    font-size: 20px;
+    padding-bottom: 6px;
+}
+
+.menu {
+    padding: 10px 10px 0px 0px;
+}
+
+.menu .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu img {
+    width: 40%;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 2px;
+    background-color: var(--color-secondary);
+}
+
+.menu .text {
+    width: 55%;
+}
+
+.menu .section {
+    font-size: 14px;
+}
+
+.menu .name {
+    font-size: 12px;
+}
+
+.menu .disc {
+    font-size: 8px;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.aling-end {
+    text-align: end;
+}

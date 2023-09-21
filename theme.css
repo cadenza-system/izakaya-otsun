@@ -1,0 +1,23 @@
+:root{
+    --color-primary: #8d001d;
+    --color-secondary: #e2dbbd;
+    --color-accent: #759488;
+}
+
+/* :root {
+    --color-primary: #fef2e2;
+    --color-secondary: #2f241b;
+    --color-accent: #a9744a;
+} */
+
+.font-main {
+    font-family: yowaku;
+}
+
+.font-accent {
+    font-family: "memowa-ru";
+}
+
+.font-base {
+    font-family: "Hannari";
+}
