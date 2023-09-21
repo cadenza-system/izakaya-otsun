@@ -1,3 +1,14 @@
+body {
+    background-color: rgb(232, 232, 232);
+}
+
+.content {
+    @media (min-width: 721px) {
+        width: 70vw;
+        margin:0 15vw;
+    }
+}
+
 header {
     height: 50px;
     display: flex;
@@ -83,6 +94,15 @@ header .title {
     text-align: center;
     height: 100%;
     animation: disc 1s both;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (min-width: 721px) {
+        font-size: 24px;
+        padding: 0 50px;
+    }
 }
 
 @keyframes disc {
@@ -104,7 +124,6 @@ header .title {
 .chef .container {
     display: flex;
     justify-content: space-around;
-
 }
 
 .chef .title {
@@ -115,6 +134,10 @@ header .title {
 .chef .text {
     font-size: 10px;
     width: 60%;
+
+    @media (min-width: 721px) {
+        font-size: 20px;
+    }
 }
 
 .chef .inner {
@@ -129,14 +152,8 @@ header .title {
     height: fit-content;
     padding: 4px;
     border-radius: 50%;
-    /* animation: infinite 0.1s rotation; */
+
 }
-
-@keyframes rotation{
-    0%{ transform:rotate(0);}
-    100%{ transform:rotate(360deg); }
-  }
-
 .menu-list {
     flex-direction: column;
     padding: 10px 10px 20px 10px;
@@ -172,6 +189,7 @@ header .title {
 .menu .section {
     font-size: 14px;
     height: 24px;
+    margin-bottom: 15px;
 }
 
 .menu .name {
@@ -197,6 +215,7 @@ header .title {
 footer .book {
     padding-bottom: 24px;
 }
+
 
 .btn:hover {
     background-color: var(--color-primary);
