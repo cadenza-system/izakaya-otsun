@@ -9,6 +9,11 @@ header .title {
     font-size: 24px;
 }
 
+.icon {
+    width: 35px;
+    margin-right: 5px;
+}
+
 .bg-primary {
     background-color: var(--color-primary);
 }
@@ -93,7 +98,7 @@ header .title {
 }
 
 .chef {
-    padding: 10px 10px 20px 10px;
+    padding: 0 10px 20px 10px;
 }
 
 .chef .container {
@@ -112,12 +117,25 @@ header .title {
     width: 60%;
 }
 
-.chef img{
+.chef .inner {
     width: 30%;
+    text-align: center;
+}
+
+.chef .name {
+    font-size: 20px;
+}
+.chef img{
     height: fit-content;
     padding: 4px;
     border-radius: 50%;
+    /* animation: infinite 0.1s rotation; */
 }
+
+@keyframes rotation{
+    0%{ transform:rotate(0);}
+    100%{ transform:rotate(360deg); }
+  }
 
 .menu-list {
     flex-direction: column;
@@ -153,6 +171,7 @@ header .title {
 
 .menu .section {
     font-size: 14px;
+    height: 24px;
 }
 
 .menu .name {
@@ -163,10 +182,26 @@ header .title {
     font-size: 8px;
 }
 
+.menu .container {
+    margin-bottom: 10px;
+}
+
 .row-reverse {
     flex-direction: row-reverse;
 }
 
 .aling-end {
     text-align: end;
+}
+
+footer {
+    padding-bottom: 22px !important;
+}
+
+footer .book {
+    padding-bottom: 24px;
+}
+
+.btn:hover {
+    background-color: var(--color-primary);
 }
