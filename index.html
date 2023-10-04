@@ -27,12 +27,18 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script type="text/javascript" src="slick/slick.min.js"></script>
 
     <link rel="stylesheet" href="font.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="theme.css" />
     <link rel="icon" href="/asset/favicon.ico" />
     <script src="script.js"></script>
+
     <title>ビストロおつん</title>
   </head>
   <body>
@@ -44,30 +50,53 @@
     <div class="content">
       <div class="disc">
         <img
-          src="https://i0.wp.com/www.il-calice.jp/wp-content/uploads/2021/09/22348815_m.jpg"
+          src="https://cdnspacemarket.com/uploads/attachments/394770/image.jpg?width=902&height=507&fit=crop&quality=75&format=jpg&dpr=2&auto=webp"
           alt=""
         />
         <div class="disc-text">
           <div class="color-white font-base">
-            ———富・名声・力。
-            この世のすべてを手に入れた男、海賊王ゴールド・ロジャー。
-            彼の死に際に放った一言は、人々を海へ駆り立てた。
-            「おれの財宝か?欲しけりゃくれてやる。探せ!この世のすべてをそこに置いてきた!」
-            男達は、グランドラインを目指し、夢を追い続ける。
-            世はまさに、大海賊時代!
+            サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
           </div>
         </div>
       </div>
       <div class="bg-accent" style="height: 8px;"></div>
       <div class="info bg-secondary color-black">
         <div class="day">
-          <div class="title font-main ">スケジュール</div>
-          <div class="content font-base ">11/3(金) 4(土) 5(日)</div>
+          <div class="title font-main">スケジュール</div>
+          <div class="content font-base ">
+            <span style="font-weight: bold;" style="color: rgb(80, 80, 80);"
+              >11/3(金)</span
+            >
+            <span style="font-size: 12px;">第</span>1<span
+              style="font-size: 12px;"
+              >部</span
+            >-17:00~ <span style="font-size: 12px;">第</span>2<span
+              style="font-size: 12px;"
+              >部</span
+            >-20:30~
+          </div>
+          <div class="content font-base " style="color: rgb(80, 80, 80);">
+            <span style="font-weight:bold;">11/4(土) </span>12:30~
+            <span style="font-size: 12px;">(1部のみ)</span>
+          </div>
+          <div class="content font-base " style="color: rgb(80, 80, 80);">
+            <span style="font-weight: bold;">11/5(日)</span>
+            <span style="font-size: 12px;">第</span>1<span
+              style="font-size: 12px;"
+              >部</span
+            >-17:00~ <span style="font-size: 12px;">第</span>2<span
+              style="font-size: 12px;"
+              >部</span
+            >-20:30~
+          </div>
         </div>
         <div class="location">
           <div class="title font-main">アクセス</div>
-          <div class="content font-base">
-            〒100-8111 東京都千代田区千代田1-1
+          <div class="content font-base" style="color: rgb(80, 80, 80);">
+            東京都港区赤坂3丁目16-3伊勢幸ビルＢ１
+          </div>
+          <div class="content font-base" style="color: rgb(80, 80, 80);">
+            東京メトロ千代田線 赤坂駅 徒歩3分
           </div>
         </div>
         <div class="book">
@@ -82,15 +111,12 @@
         <div class="title font-main">シェフ紹介</div>
         <div class="container">
           <div class="inner">
-            <img
-              src="https://pbs.twimg.com/profile_images/1586601097497452545/MfNORC4N_400x400.jpg"
-              class="bg-primary"
-            />
+            <img src="/asset/IMG_5887.jpg" class="bg-primary" />
             <div class="name font-main">おつん</div>
           </div>
 
           <div class="text font-base color-black">
-            金なし、女無し、意気地なし。金なし、女無し、意気地なし。金なし、女無し、意気地なし。金なし、女無し、意気地なし。金なし、女無し、意気地なし。金なし、女無し、意気地なし。金なし、女無し、意気地なし。金なし、女無し、意気地なし。金なし、女無し、意気地なし。金なし、女無し、意気地なし。
+            サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
           </div>
         </div>
       </div>
@@ -100,83 +126,79 @@
           <div class="menu">
             <div class="section font-main">ANTIPASTO</div>
             <div class="container">
-              <img
-                src="https://web.hh-online.jp/hankyu-food/blog/images/ab2f09dbb6b3052cdfdb16cd24dce7ffcb31d9bb.jpg"
-              />
               <div class="text">
-                <div class="name font-base">料理名</div>
-                <div class="disc font-base ">
-                  サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
-                </div>
+                <div class="name font-base">前菜盛り合わせ</div>
               </div>
             </div>
-            <hr />
           </div>
           <div class="menu">
-            <div class="section font-main aling-end">PRIMO PIATTO</div>
-            <div class="container row-reverse">
-              <img
-                src="https://web.hh-online.jp/hankyu-food/blog/images/ab2f09dbb6b3052cdfdb16cd24dce7ffcb31d9bb.jpg"
-                alt=""
-              />
-              <div class="text">
-                <div class="name font-base">料理名</div>
-                <div class="disc font-base ">
-                  サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
-                </div>
-              </div>
-            </div>
-            <hr />
-          </div>
-          <div class="menu">
-            <div class="section font-main">SECOND PIATTO</div>
+            <div class="section font-main">PASTA</div>
             <div class="container">
-              <img
-                src="https://web.hh-online.jp/hankyu-food/blog/images/ab2f09dbb6b3052cdfdb16cd24dce7ffcb31d9bb.jpg"
-                alt=""
-              />
               <div class="text">
-                <div class="name font-base">料理名</div>
-                <div class="disc font-base">
-                  サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                <div class="name font-base">
+                  きのことカキ出汁のクリームリングイネ
                 </div>
               </div>
             </div>
-            <hr />
           </div>
           <div class="menu">
-            <div class="section font-main aling-end">CONTRNO</div>
-            <div class="container row-reverse">
-              <img
-                src="https://web.hh-online.jp/hankyu-food/blog/images/ab2f09dbb6b3052cdfdb16cd24dce7ffcb31d9bb.jpg"
-                alt=""
-              />
-              <div class="text">
-                <div class="name font-base">料理名</div>
-                <div class="disc font-base">
-                  サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
-                </div>
-              </div>
-            </div>
-            <hr />
-          </div>
-          <div class="menu">
-            <div class="section font-main ">DOLCE</div>
+            <div class="section font-main">MAIN</div>
             <div class="container">
-              <img
-                src="https://web.hh-online.jp/hankyu-food/blog/images/ab2f09dbb6b3052cdfdb16cd24dce7ffcb31d9bb.jpg"
-              />
               <div class="text">
-                <div class="name font-base">料理名</div>
-                <div class="disc font-base">
-                  サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                <div class="name font-base">牛ほほのワイン煮込み</div>
+              </div>
+            </div>
+          </div>
+          <div class="menu">
+            <div class="section font-main">DOLCE</div>
+            <div class="container">
+              <div class="text">
+                <div class="name font-base">ガトーショコラ</div>
+              </div>
+            </div>
+          </div>
+          <div class="menu">
+            <div class="section font-main">DRINK</div>
+            <div class="container">
+              <div class="text">
+                <div class="name font-base">
+                  ビール、ワイン、カクテル各種、ソフトドリンク各種
                 </div>
               </div>
             </div>
-            <hr />
           </div>
         </div>
       </div>
+
+      <div class="images">
+        <div class="slider mypattern">
+          <div>
+            <img
+              src="https://prcdn.freetls.fastly.net/release_image/64743/9/64743-9-c12e5d5e3e7e260e3a94fa0db28aef78-2429x1620.jpg?format=jpeg&auto=webp&quality=85%2C65&width=1950&height=1350&fit=bounds"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://prcdn.freetls.fastly.net/release_image/64743/9/64743-9-c12e5d5e3e7e260e3a94fa0db28aef78-2429x1620.jpg?format=jpeg&auto=webp&quality=85%2C65&width=1950&height=1350&fit=bounds"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://prcdn.freetls.fastly.net/release_image/64743/9/64743-9-c12e5d5e3e7e260e3a94fa0db28aef78-2429x1620.jpg?format=jpeg&auto=webp&quality=85%2C65&width=1950&height=1350&fit=bounds"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://prcdn.freetls.fastly.net/release_image/64743/9/64743-9-c12e5d5e3e7e260e3a94fa0db28aef78-2429x1620.jpg?format=jpeg&auto=webp&quality=85%2C65&width=1950&height=1350&fit=bounds"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
       <footer class="bg-accent">
         <div class="book bg-secondary">
           <a
