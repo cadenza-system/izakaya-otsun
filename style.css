@@ -6,8 +6,6 @@ body {
     }
 }
 
-
-
 header {
     height: 50px;
     padding-left: 20px;
@@ -138,9 +136,10 @@ header .title {
 .chef .text {
     font-size: 10px;
     width: 60%;
-
+    margin-top: 15px;
     @media (min-width: 721px) {
-        font-size: 20px;
+        margin-top: 16px;
+        font-size: 15px;
     }
 }
 
@@ -155,7 +154,7 @@ header .title {
 .chef img{
     height: fit-content;
     padding: 4px;
-    border-radius: 20%;
+    border-radius: 50%;
 
 }
 .menu-list {
@@ -188,6 +187,7 @@ header .title {
 
 .menu .text {
     width: 100%;
+   
 }
 
 .menu .section {
