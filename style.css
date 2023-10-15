@@ -103,8 +103,32 @@ header .title {
     justify-content: center;
     align-items: center;
     animation: disc 2s both;
-    -webkit-animation: disc 2s both; /* Add -webkit-animation */
+    -webkit-animation: disc 2s both;
+    transform: translateZ(0);
 }
+
+/* 以前のコードはそのまま */
+
+@keyframes disc {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        backdrop-filter: blur(2px) brightness(50%);
+    }
+}
+
+@-webkit-keyframes disc {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        -webkit-backdrop-filter: blur(2px) brightness(50%);
+    }
+}
+
 
 .disc img {
     height: 150px;
