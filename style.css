@@ -1,8 +1,12 @@
 body {
     background-color: rgb(255, 255, 255);
-    @media (min-width: 721px) {
+    width: 100%; /* Add this to ensure full width */
+}
+
+@media (min-width: 721px) {
+    body {
         width: 50vw;
-        margin:0 25vw;
+        margin: 0 25vw;
     }
 }
 
@@ -35,7 +39,7 @@ header .title {
 }
 
 .bg-white {
-    background-color: #ffffff
+    background-color: #ffffff;
 }
 
 .color-primary {
@@ -51,17 +55,15 @@ header .title {
 }
 
 .color-white {
-    color: #ffffff
+    color: #ffffff;
 }
 
 .color-black {
     color: rgb(59, 57, 57);
 }
 
-
 .info {
     padding: 10px 10px 20px 10px;
-
 }
 
 .info .title {
@@ -83,7 +85,7 @@ header .title {
 }
 
 .disc {
-    position:relative;
+    position: relative;
     height: fit-content;
 }
 
@@ -114,6 +116,7 @@ header .title {
     }
     to {
         opacity: 1;
+        -webkit-backdrop-filter: blur(2px) brightness(50%);
         backdrop-filter: blur(2px) brightness(50%);
     }
 }
@@ -147,9 +150,13 @@ header .title {
 .chef .text {
     font-size: 10px;
     width: 60%;
+    margin-top: 15px;
+}
 
-    @media (min-width: 721px) {
-        font-size: 20px;
+@media (min-width: 721px) {
+    .chef .text {
+        margin-top: 16px;
+        font-size: 15px;
     }
 }
 
@@ -161,12 +168,13 @@ header .title {
 .chef .name {
     font-size: 20px;
 }
-.chef img{
+
+.chef img {
     height: fit-content;
     padding: 4px;
-    border-radius: 20%;
-
+    border-radius: 50%;
 }
+
 .menu-list {
     flex-direction: column;
     padding: 10px 10px 20px 10px;
@@ -236,14 +244,11 @@ footer .book {
     padding-bottom: 24px;
 }
 
-
 .btn:hover {
     background-color: var(--color-primary);
 }
 
-
 .slider {
-
     margin: 0 auto 80px;
     height: fit-content;
 }
@@ -261,9 +266,7 @@ footer .book {
     margin: 10px;
 }
 
-/*slick setting*/
-
-
+/* Slick settings */
 .mypattern .slick-slide:not(.slick-center) {
     -webkit-filter: opacity(70%);
     -moz-filter: opacity(70%);
@@ -273,9 +276,16 @@ footer .book {
     transition: 0.2s linear;
 }
 
-/*slick setting*/
-
+/* Slick settings */
 .slick-prev:before,
 .slick-next:before {
     color: var(--color-accent);
+}
+
+.chef img {
+    height: auto;
+    width: 100%;
+    object-fit: cover; /* Adjust as needed */
+    padding: 4px;
+    border-radius: 50%;
 }
