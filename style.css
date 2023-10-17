@@ -235,11 +235,12 @@ header .title {
     padding-top: 0;
     padding-bottom: 0;
     font-size: 14px;
-    margin-bottom: 0px;
+    margin: 3px 0;
 }
 
 .menu .name {
     font-size: 12px;
+    margin-bottom: 5px;
 }
 
 .menu .disc {
@@ -247,7 +248,7 @@ header .title {
 }
 
 .menu .container {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
 .menu-list .horizontal-border {
