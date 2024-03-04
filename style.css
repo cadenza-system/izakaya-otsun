@@ -44,6 +44,7 @@ header .title {
 
 .color-primary {
     color: var(--color-primary);
+
 }
 
 .color-secondary {
@@ -87,11 +88,13 @@ header .title {
 .disc {
     position: relative;
     height: fit-content;
+
 }
 
 .disc .background {
     height: 200px;
     width: 100%;
+
 }
 
 .disc .logo {
@@ -107,31 +110,9 @@ header .title {
     transform: translateZ(0);
 }
 
-/* 以前のコードはそのまま */
-
-@keyframes disc {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-        backdrop-filter: blur(2px) brightness(50%);
-    }
-}
-
-@-webkit-keyframes disc {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-        -webkit-backdrop-filter: blur(2px) brightness(50%);
-    }
-}
-
-
 .disc img {
     height: 150px;
+
 }
 
 @keyframes disc {
@@ -140,8 +121,8 @@ header .title {
     }
     to {
         opacity: 1;
-        -webkit-backdrop-filter: blur(2px) brightness(50%);
-        backdrop-filter: blur(2px) brightness(50%);
+        -webkit-backdrop-filter:blur(2px) brightness(50%);
+        backdrop-filter:sepia(0.8) blur(2px) brightness(50%);
     }
 }
 
@@ -152,7 +133,7 @@ header .title {
     }
     to {
         opacity: 1;
-        -webkit-backdrop-filter: blur(2px) brightness(50%);
+        -webkit-backdrop-filter:sepia(0.8) blur(2px) brightness(50%);
     }
 }
 
