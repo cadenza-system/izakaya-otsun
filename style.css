@@ -295,3 +295,9 @@ footer .book {
     padding: 4px;
     border-radius: 50%;
 }
+
+.map-btn {
+    width: 120px;
+    display: flex;
+    justify-content: center;
+}
